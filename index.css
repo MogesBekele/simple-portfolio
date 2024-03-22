@@ -1,0 +1,288 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+} 
+
+nav{
+  display: flex;
+  height: 80px;
+  background-color: grey;
+  justify-content: space-between;
+  padding-top: 10px;
+  font-size: 30PX;
+  border-bottom: 2px solid rgb(162, 162, 183);
+  position: sticky;
+  
+  
+  
+}
+nav h2{
+  rotate: -5deg;
+  color: rgb(236, 236, 39);
+  padding-left: 40px;
+}
+ul{
+  display: flex;
+  list-style: none;
+  justify-content: space-around;
+  flex-direction: row;
+  width: 300px;
+  font-size: 25px;
+  padding-top: 20px;
+  padding-right: 170px;
+  
+
+
+}
+ a{
+  color: white;
+  text-align: right;
+  padding: 5px;
+  text-decoration: none;
+  
+}
+
+a:hover{
+  color: yellow;
+  border-bottom: 2px yellow solid;
+  border-right: 2px yellow solid;
+
+}
+.home{
+  height: 100vh;
+ background-image: linear-gradient(to right, white, rgb(178, 145, 129));
+  border-bottom: 2px solid white
+  
+}
+.container{
+  display: flex;
+  justify-content: space-around;
+  padding-top: 50px;
+  color: rgb(37, 12, 37);
+  
+  
+
+}
+.web{
+  width: 500px;
+  font-size: 24px;
+  text-indent: 20px;
+
+}
+.web p{
+padding-left: 30px;
+padding-top: 20px;
+transition: width 2s, height 2s, transform 2s;
+}
+.web p:hover{
+color: #CC44BF;
+width: 500px;
+transform: rotate(360deg);
+
+
+}
+
+span{
+  font-style: italic;
+  color: blue;
+}
+img{
+  height: 200px;
+  width: 300px;
+  border-radius: 20px;
+}
+
+.web-image:hover{
+  height: 350px;
+  width: 650px;
+  border-radius: 20px;
+  transition: width 2s, height 2s, transform 2s;
+  
+}
+.section{
+  background-image:linear-gradient(to bottom, white, rgb(204, 139, 139), white);
+  height: 100vh;
+}
+.row{
+  display: flex;
+  justify-content: space-around;
+  color: white;
+}
+.h2{
+  text-align: center;
+  color: rgb(29, 29, 26);
+  font-size: 30px;
+  padding: 30px;
+}
+
+.image{
+  height: 180px;
+  width: 180px;
+  border-radius: 100px;
+  
+}
+.history{
+  width: 500px;
+  text-align: center;
+  
+}
+
+.name{
+  text-decoration: underline;
+  padding-top: 5px;
+  font-style: oblique;
+  color: black;
+  width: 200px;
+  transform: rotate(-10deg);
+}
+p{
+  font-size: 20px;
+}
+h1{
+  font-size: 30px;
+  color: rgb(37, 12, 37);
+}
+.skill{
+  background-image:linear-gradient(to bottom, #B3B6B7, rgb(204, 139, 139), rgb(192, 164, 164));
+  height: 100vh;
+  
+}
+.skill h1{
+  color: rgb(74, 38, 38);
+  text-align: center;
+  padding: 50px;
+}
+
+.gallery{
+  width: 900px;
+  display: flex;
+  overflow-x: scroll;
+  
+  
+ 
+}
+
+.gallery div{
+  width: 100%;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-gap: 20px;
+  padding: 10px;
+  flex: none;
+  
+  
+}
+.gallery div img{
+  width: 100% ;
+  filter: grayscale(100%);
+  transition: transform 0.5s;
+}
+.gallery::-webkit-scrollbar{
+  display: none;
+}
+
+.next{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px auto;
+}
+
+#nextbtn, #prevbtn{
+  width: 50px;
+  cursor: pointer;
+  font-size: 40px;
+  color: rgb(62, 14, 166);
+  margin: 10px;
+}
+
+.gallery div img:hover{
+  filter: grayscale(0);
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+.prohead{
+  text-align: center;
+  padding-top: 50px;
+  font-size: 40px;
+  padding-bottom: 40px;
+
+}
+
+.project{
+  padding-top: 40px;
+  width: 400px;
+  height: 300px;
+  text-align: center;
+  border: 2px solid black;
+  margin: auto;
+  color: #CC44BF;
+  line-height: 50px;
+  border-style: groove;
+  
+  
+
+}
+.projects{
+  background-image:linear-gradient(to bottom, #B3B6B7, rgb(161, 130, 130), #B3B6B7);
+  height: 100vh;
+  border: 1px solid whitesmoke;
+  border-left: none;
+  border-right: none;
+  color: white;
+
+}
+
+footer{
+  height: 70vh;
+  color: white;
+  background-color: #192A3B;
+}
+footer h3{
+  border-top: 1px solid white;
+  text-align: center;
+  padding-top: 40px;
+
+}
+.follow{
+  display: flex;
+  justify-content: space-between;
+  padding-left: 150px;
+  padding-right: 150px;
+  padding-bottom: 30px;
+  padding-top: 100px;
+  
+  
+}
+.follow h1{
+  color: white;
+  font-size: 20px;
+  margin: auto;
+}
+
+.div{
+  padding-top: 20px;
+  display: flex;
+  gap: 30px;
+
+}
+.link{
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+}
+.cont{
+  font-size: 20px;
+  line-height: 40px;
+}
+
+.best{
+  text-align: center;
+  color: tan;
+  margin-top: 30px;
+  font-size: 15px;
+}
+
+
